@@ -1,3 +1,5 @@
 max_width = 80
 tab_spaces = 4
-chain_width = 80
+chain_width = 0
+trailing_comma = "Never"
+trailing_comma_single_line = false
