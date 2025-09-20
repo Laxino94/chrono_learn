@@ -1,6 +1,7 @@
 #![allow(dead_code)]
 pub mod current_time {
     use chrono::{Local, Utc};
+    // local
     pub fn get_cur_local_date_time() -> String {
         Local::now().format("%Y-%m-%d %H:%M:%S").to_string()
     }
@@ -10,7 +11,7 @@ pub mod current_time {
     pub fn get_cur_local_time() -> String {
         Local::now().format("%H:%M:%S").to_string()
     }
-
+    // utc
     pub fn get_cur_utc_date_time() -> String {
         Utc::now().format("%Y-%m-%d %H:%M:%S").to_string()
     }
@@ -20,6 +21,7 @@ pub mod current_time {
     pub fn get_cur_utc_time() -> String {
         Utc::now().format("%H:%M:%S").to_string()
     }
+    // timestamp
     pub fn get_cur_timestamp() -> i64 {
         Utc::now().timestamp()
     }
